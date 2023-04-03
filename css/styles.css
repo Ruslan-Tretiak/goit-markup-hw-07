@@ -863,11 +863,17 @@ body {
     color: var(--link-color);
 }
 /* =========================PORTFOLIO-NAV=========================*/
-@media screen and (max-width: 796px) {
+@media screen and (min-width: 320px) {
     .page {
         display: flex;
         justify-content: space-between;
     }
+    
+}
+@media screen and (min-width: 767px) {
+    .card-list {
+            column-gap: 16px;
+        }
 }
 .overlay-text {
     display: block;
@@ -885,7 +891,6 @@ body {
     justify-content: space-between;
     margin-top: 72px;
     row-gap: 48px;
-    column-gap: 24px;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -987,6 +992,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .btn-component {
     transition: 
