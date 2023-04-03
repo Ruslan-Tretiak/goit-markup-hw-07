@@ -576,11 +576,16 @@ body {
 /* =========================/TEAM=========================*/
 
 /* =========================CUSTOMERS=========================*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+    .customers-box {
+    margin-bottom: 24px;
+    }
+}
+@media screen and (min-width: 480px) {
     .customers-logo-box {
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: center;      
     }
     .customers-box:nth-last-child(even) {
         margin-right: 16px;
@@ -589,7 +594,7 @@ body {
         margin-bottom: 72px;
     }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .customers-logo-box {
         display: flex;
         flex-wrap: wrap;
@@ -608,7 +613,6 @@ body {
     .customers-logo-box {
         display: flex;
         justify-content: space-between;
-        gap: 24px;
     }
 
 }
