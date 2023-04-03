@@ -137,8 +137,6 @@ body {
     .logo-web {
         color: var(--secondary-logo-color);
     }
-    
-
 }
 .page-header-conteiner {
     display: flex;
@@ -154,7 +152,6 @@ body {
 }
 .page-header {
     padding-top: 24px;
-    padding-bottom: 24px;
 }
 @media screen and (min-width:768px) {
     .address-link {
@@ -197,6 +194,7 @@ body {
         padding-top: 24px;
         padding-bottom: 24px;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        padding-bottom: 12px;
     }
 
     .menu-studio {
@@ -210,6 +208,7 @@ body {
     .menu {
         display: flex;
         gap: 40px;
+        align-items: center;
     }
 
     .studio::after {
@@ -233,6 +232,10 @@ body {
 @media screen and (min-width:1200px) {
     .address-block {
             display: flex;
+        }
+        .page-header {
+            padding-top: 24px;
+            padding-bottom: 24px;
         }
 }
 .address {
@@ -259,7 +262,94 @@ body {
 /* ==========================/HEADER======================== */
 
 /* ==========================HERO========================*/
+.hero {
+    background-color: var(--background-hero);
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 188px;
+    padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-img/mobile-hero-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+screen and (min-resolution: 192dpi)and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px){
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img/mobile-hero@2x-min.jpg);
+    }
+}
 
+.hero-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--acent-color);
+    margin-bottom: 42px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img/tablet-hero-min.jpg);
+        background-size: cover;
+    }
+
+    .hero-text {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--acent-color);
+        margin-bottom: 42px;
+        width: 497px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi)and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img/tablet-hero@2x-min.jpg);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img/people-office.jpeg);
+        background-size: cover;
+    }
+    .hero-text {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--acent-color);
+        margin-bottom: 42px;
+        width: 497px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi)and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img/people-office@2x.jpg);
+    }
+}
 .hero-btn {
         background-color: var(--background-btn-hero);
         color: var(--acent-color);
@@ -276,91 +366,10 @@ body {
         letter-spacing: 0.04em;
 
     }
-
 .hero-btn:hover,
 .hero-btn:focus {
         background-color: var(--hover-focus-btn);
     }
-
-.hero {
-        background-color: var(--background-hero);
-        max-width: 1440px;
-        text-align: center;
-        margin: 0 auto;
-        padding-bottom: 188px;
-        padding-top: 188px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-@media screen and (min-width: 1199px) {
-    .hero {
-        max-width: 1440px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-min.jpg);
-        background-size: cover;
-    }
-
-    .hero-text {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: var(--acent-color);
-        margin-bottom: 42px;
-        width: 497px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .hero {
-        max-width: 768px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-min.jpg);
-        background-size: cover;
-    }
-    .hero-text {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: var(--acent-color);
-        margin-bottom: 42px;
-        width: 497px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width: 767px) {
-    .hero {
-        max-width: 480px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-hero-min.jpg);
-        background-size: cover;
-    }
-    .hero-text {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: var(--acent-color);
-        margin-bottom: 42px;
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    
-}
-@media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
-    }
-}
-
-
 
 /* ==========================/HERO========================*/
 
@@ -393,8 +402,7 @@ body {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-    
-    
+
 }
 @media screen and (max-width: 1199px) {
     .about-block:nth-child(-n+2) {
@@ -874,6 +882,9 @@ body {
     .card-list {
             column-gap: 16px;
         }
+}
+.page {
+    align-items: center;
 }
 .overlay-text {
     display: block;
