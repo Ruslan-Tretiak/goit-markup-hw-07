@@ -230,15 +230,16 @@ body {
     }
 
 }
-@media screen and (min-width:1200) {
+@media screen and (min-width:1200px) {
     .address-block {
-        display: flex;
-    }
+            display: flex;
+        }
 }
 .address {
     margin-left: auto;
 
 }
+
 .address-link {
     font-style: normal;
     font-weight: 400;
@@ -371,9 +372,9 @@ body {
     .about-title-comp {
         text-align: center;
     }
-        .about-block {
-            justify-content: space-between;
-        }
+    .about-block {
+        justify-content: space-between;
+    }
 }
 @media screen and (max-width: 1199px) {
     .about-box {
@@ -858,7 +859,12 @@ body {
     color: var(--link-color);
 }
 /* =========================PORTFOLIO-NAV=========================*/
-
+@media screen and (max-width: 796px) {
+    .page {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .overlay-text {
     display: block;
 }
