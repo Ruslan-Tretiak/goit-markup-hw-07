@@ -66,7 +66,7 @@ body {
 }
 @media screen and (min-width: 320px){
     .conteiner {
-        width: 428px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -76,8 +76,7 @@ body {
         width: 768px;
     }
     .conteiner-content {
-            width: 552px;
-    
+        width: 552px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -272,7 +271,7 @@ body {
     background-color: var(--background-hero);
     max-width: 480px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 112px;
     padding-top: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -297,7 +296,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px){
     letter-spacing: 0.02em;
     color: var(--acent-color);
     margin-bottom: 72px;
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -317,8 +316,8 @@ screen and (min-resolution: 2dppx) and (max-width: 768px){
         letter-spacing: 0.02em;
         color: var(--acent-color);
         margin-bottom: 42px;
-        width: 497px;
-        margin-left: auto;
+        max-width: 497px;
+        margin-left:  auto;
         margin-right: auto;
     }
 }
@@ -328,6 +327,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-img/tablet-hero@2x-min.jpg);
+            background-size: cover;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -346,7 +346,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         letter-spacing: 0.02em;
         color: var(--acent-color);
         margin-bottom: 42px;
-        width: 497px;
+        max-width: 497px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -357,6 +357,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-img/people-office@2x.jpg);
+            background-size: cover;
     }
 }
 .hero-btn {
@@ -373,7 +374,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-
     }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -717,7 +717,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         text-align: center;
     }
     .footer-form-input {
-        width: 100%;
+        max-width: 398px;
     }
     .footer-form-text {
         text-align: center;
@@ -728,8 +728,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         margin-right: auto;
         margin-left: auto;
     }
-
-
 
 }
 @media screen and (min-width: 768px) {

@@ -19,8 +19,8 @@
 
 .modal-window {
     position: absolute;
-    width: 408px;
-    height: 584px;
+    max-width: 408px;
+    max-height: 584px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
