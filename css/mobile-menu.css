@@ -43,6 +43,10 @@
 
 
     .mobile-menu-conteiner {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
         position: relative;
         padding-left: 40px;
         padding-top: 80px;
@@ -58,10 +62,19 @@
         color: #2E2F42;
         transition: color var(--transition-duration);
     }
-
-    .mobile-menu-nav {
-        margin-bottom: 284px;
+    .main-page-mobile {
+        color: var(--link-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        transition: color var(--transition-duration);
     }
+
+    /* .mobile-menu-nav {
+        margin-bottom: 284px;
+    } */
 
     .mobile-menu-nav-items:nth-child(-n+2) {
         margin-bottom: 40px;
@@ -98,9 +111,6 @@
     .mobile-menu-email:focus {
         color: var(--link-color);
     }
-
-
-
     .mobile-close-window {
         position: absolute;
         top: 24px;
@@ -132,7 +142,6 @@
 
     .mobile-menu-social-block {
         display: flex;
-        justify-content: center;
         margin-top: 48px;
         gap: 56px;
     }
