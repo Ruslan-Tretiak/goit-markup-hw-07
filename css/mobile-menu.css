@@ -22,8 +22,7 @@
     .mobile-menu {
         position: fixed;
         min-width: 100%;
-        min-height: 100%;
-        /* max-height: 796px; */
+        max-height: 796px;
         left: 0;
         top: 0;
         z-index: 1000;
