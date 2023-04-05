@@ -1,4 +1,35 @@
 /* =========================MODAL WINDOW=========================*/
+@media screen and (max-width: 797px) {
+    .modal-window {
+        max-width: 398px;
+        max-height: 586px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 72px 24px 24px 24px;
+    }
+    .modal-for-title {
+        width: 340px;
+    }
+}
+@media screen and (min-width: 797px) {
+    .modal-window {
+            position: absolute;
+            max-width: 408px;
+            max-height: 584px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #FCFCFC;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            padding: 72px 24px 24px 24px;
+        }
+}
 .is-hidden.backdrop {
     visibility: hidden;
     opacity: 0;
@@ -17,18 +48,7 @@
         visibility var(--transition-duration);
 }
 
-.modal-window {
-    position: absolute;
-    max-width: 408px;
-    max-height: 584px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #FCFCFC;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 72px 24px 24px 24px;
-}
+
 
 .modal-close-btn {
     position: absolute;
