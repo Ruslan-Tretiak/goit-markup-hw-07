@@ -1,8 +1,8 @@
 /* =========================MODAL WINDOW=========================*/
 @media screen and (max-width: 797px) {
     .modal-window {
-        max-width: 398px;
-        max-height: 586px;
+        width: 392px;
+        height: 586px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -13,8 +13,33 @@
         padding: 72px 24px 24px 24px;
     }
     .modal-for-title {
-        width: 340px;
+        max-width: 340px;
+        font-size: 16px;
     }
+    .model-form-massage {
+        height: 120px;
+    }
+    .modal-form-check-desc {
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .modal-for-title {
+        font-size: 14px;
+    }
+    .modal-window {
+        width: 300px;
+        height: 586px;
+    }
+    .modal-form-check-desc {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    /* .model-form-massage {
+        height: 80px;
+    } */
+
 }
 @media screen and (min-width: 797px) {
     .modal-window {
@@ -28,6 +53,13 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 4px;
             padding: 72px 24px 24px 24px;
+        }
+        .model-form-massage {
+            height: 120px;
+        }
+        .modal-form-check-desc {
+            margin-bottom: 24px;
+            margin-top: 16px;
         }
 }
 .is-hidden.backdrop {
@@ -83,7 +115,7 @@
 /* =========================MODAL-FORM=========================*/
 .modal-for-title {
     font-weight: 500;
-    font-size: 16px;
+    
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
@@ -147,7 +179,7 @@
 .model-form-massage {
     width: 100%;
     resize: none;
-    height: 120px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: border-color var(--transition-duration);
     border-radius: 4px;
@@ -175,8 +207,8 @@
     font-size: 12px;
     color: #757575;
     align-items: center;
-    margin-bottom: 24px;
-    margin-top: 16px;
+    /* margin-bottom: 24px;
+    margin-top: 16px; */
 
 }
 
